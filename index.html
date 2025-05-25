@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pottyismus – Encyklopedie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f6f6f6;
+      color: #202122;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #a2a9b1;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav {
+      width: 200px;
+      background-color: #ffffff;
+      border-right: 1px solid #a2a9b1;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    nav li {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0645ad;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    .content-section {
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      display: none;
+    }
+
+    .section-content.active {
+      display: block;
+    }
+
+h2 {
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 5px;
+  margin-top: 0;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px; /* prostor pro šipku vpravo */
+}
+
+h2::before {
+  content: '\25BA'; /* šipka */
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+h2.active::before {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+
+    p {
+      line-height: 1.6;
+      width: 80%;
+    }
+
+    li {
+        line-height: 1.6;
+        width: 80%;
+    }
+
+    .Logo {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        left: 2%;
+    }
+    .pottyismus {
+        position: relative;
+        left: 6%;
+        top: 5px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Logo" class="Logo" />
+    <h1 class="pottyismus">Pottyismus</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#uvod">Úvod</a></li>
+        <li><a href="#historie">Historie</a></li>
+        <li><a href="#priznaky">Příznaky</a></li>
+        <li><a href="#lecba">Léčba</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="uvod" class="content-section">
+        <h1 class="Uvod">Ůvod</h1>
+        <p>Pottyismus je vzácná nemoc. Má zvláštní příznaky na vlasech a také na mozku. Známý je pouze jeden druh. Známý jako Potty obecný.
+            Vyjadřuje se sice nadměrnou matematicku inteligencí avšak má i své mouchy. Jedna z nich je takzvaně všeokecal. Častá hláška když ho uvidíte je "Do prdele je opět tady."
+            V jeho blízkosti je třeba být neustále na pozoru neboť pokud se sním spřátelíte tak to může být fatální.
+        </p>
+        <img src="Návrh_bez_názvu-removebg-preview.png" class="mozekneni">
+      </div>
+      <div id="historie" class="content-section">
+        <h2 onclick="toggleSection('content-historie', this)">Historie</h2>
+        <div id="content-historie" class="section-content">
+          <p>Historie. První příznaky se objevily v roce 2009. do roku 2012 tato nemoc nebyla známá avšak v moment co Potty obecný začal mluvit výskyt a požadavek o sebevraždu se rapidně zýšil.
+            od roku 2021 Probíha kompletní analýza avšak neúspěšně. Všichni doktoři to do týdně vzdají či se zabijí. Nemoc se však stále šíří a tak je potřeba se mít na pozoru.
+          </p>
+          <img src="Počet úmrtí s kontaktem pottyismu..png" alt="">
+        </div>
+      </div>
+      <div id="priznaky" class="content-section">
+        <h2 onclick="toggleSection('content-priznaky', this)">Příznaky</h2>
+        <div id="content-priznaky" class="section-content">
+          <p>Jako hlavní příznak se dá brát častá agrese, pomluvi a všekecalství. Hlavní body a vše na co si dávat pozor</p>
+          <li>Všekecalství - Tendence kecat do všeho a to vám do toho nic není a vůbec tomu nerozumíte.</li>
+          <li>Agrese - Agresivní chování je veliký problém tohoto druhu neboť stačí říct že má vlas posunutý o 3 stupně do leva a hrozí vám kopanec, facka.</li>
+          <li>"Nekoukej na mě." - Častá hláška tohoto druhu avšak jediný kdo na vás kouká je on.</li>
+          <li>Narážky - Narážky jsou hlavní zbraň pottyismu. Bez nich je beznadějný a neschopný boje.</li>
+          <img src="Počet úmrtí s kontaktem pottyismu. (1).png" alt="">
+        </div>
+      </div>
+      <div id="lecba" class="content-section">
+        <h2 onclick="toggleSection('content-lecba', this)">Léčba</h2>
+        <div id="content-lecba" class="section-content">
+          <p>Pokud jste se diagnostikovali a chcete se výlečit máme pro vás blbou zprávu. Pottyismus stále nemá lék avšak můžete pomoct svému okolí.</p>
+          <li>1. Distancujte se od lidí.</li>
+          <li>2. Nemluvte s lidmi ani přes internet.</li>
+          <li>3. Objednete si eutanazii a hrobku.</li>
+          <img src="Počet úmrtí s kontaktem pottyismu. (2).png" alt="">
+        </div>
+      <div id="disclaimer" class="content-section">
+        <h2 onclick="toggleSection('content-disclaimer', this)">Disclaimer</h2>
+        <div id="content-disclaimer" class="section-content">
+          <p>Text je pouze výplod fantasie. Není určen na určitou osobu a tak prosím předtím než se urazíte uvědomte si že to není dáno na vás či vaše blízké. Berte to s humorem a užívejte si života děkuji.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    function toggleSection(id, heading) {
+      const section = document.getElementById(id);
+      section.classList.toggle('active');
+      heading.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
